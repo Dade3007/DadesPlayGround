@@ -17,7 +17,7 @@ public class FisioMain extends HttpServlet{
 
 	public void doPost (HttpServletRequest req, HttpServletResponse resp){
 		try {
-			RequestDispatcher view = req.getRequestDispatcher("/index.html");		
+			RequestDispatcher view = req.getRequestDispatcher("/brezo/index.html");		
 			view.forward(req, resp);
 		} catch (ServletException | IOException e) {
 			// TODO Auto-generated catch block
