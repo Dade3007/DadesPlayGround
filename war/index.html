@@ -17,6 +17,8 @@
     <!-- Custom CSS -->
     <link href="main/css/main.css" rel="stylesheet">
     
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="main/icons/flaticon.css"> 
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
@@ -29,14 +31,14 @@
 
 <body>
 	<!-- NavBar -->
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top hidden-xs" role="navigation">
   		<div class="container">
     		<ul class="nav navbar-nav">
 		        <li class="active"><a href="#">About Me<span class="sr-only">(current)</span></a></li>
 		        <li><a href="#career">My Career</a></li>
-		        <li><a href="#">Technologies</a></li>
-		        <li><a href="#">Portfolio</a></li>
-		        <li><a href="#">Contact</a></li>
+		        <li><a href="#technologies">Technologies</a></li>
+		        <li><a href="#portfolio">Portfolio</a></li>
+		        <li><a href="#contact">Contact</a></li>
 		      </ul>
   		</div>
 	</nav>
@@ -66,75 +68,274 @@
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 		</section>
 	</div>
-	
-	<div id="career" class="career">
-		<div id="career-title">
+	<div id="career" class="anchor"></div>
+	<div  class="career">
+		<div id="career-title" class="title">
 		<!--  	<img id="careers_img" src="./main/img/careers.jpg"> -->
 			<h2 id="career_h2">MY CAREER</h2>
 		</div>
 		<div class="experience">
-			<div class="logo">
-				<img src="./main/img/taksee_logo.png">
+			<div class="container">
+				<div class="row">
+					<div class="logo col-md-3 col-xs-12">
+						<img src="./main/img/taksee_logo.png">
+					</div>
+					<div class="description col-md-9 col-xs-12">
+						<p class="enterprise"><b>TAKSEE MOBILITY</b></p>
+						<p class="dates">March 2011 - February 2012</p>
+						<p>Taksee was my very first experience. As a junior developer I.. </p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+					</div>
+				</div>
 			</div>
-			<div class="description">
-				<p class="enterprise"><b>TAKSEE MOBILITY</b></p>
-				<p class="dates">March 2011 - February 2012</p>
-				<p>Taksee was my very first experience. As a junior developer I.. </p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-			</div>
+			<hr>
 		</div>
 		
 		<div class="experience">
-			<div class="logo">
-				<img src="./main/img/accenture.png">
+			<div class="container">
+				<div class="row">
+					<div class="logo col-md-3 col-xs-12">			
+						<img src="./main/img/accenture.png">
+					</div>
+					<div class="description col-md-9 col-xs-12">
+						<p class="enterprise"><b>ACCENTURE</b></p>
+						<p class="dates">March 2012 - November 2012</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
 			</div>
-			<div class="description">
-				<p class="enterprise"><b>ACCENTURE</b></p>
-				<p class="dates">March 2012 - November 2012</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-			</div>
+			<hr>
 		</div>
 		
 		<div class="experience">
-			<div class="logo">
-				<img src="./main/img/everis.png">
+			<div class="container">
+				<div class="row">
+					<div class="logo col-md-3 col-xs-12">
+						<img src="./main/img/everis.png">
+					</div>
+					<div class="description col-md-9 col-xs-12">
+						<p class="enterprise"><b>EVERIS</b></p>
+						<p class="dates">December 2012 - February 2013</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
 			</div>
-			<div class="description">
-				<p class="enterprise"><b>EVERIS</b></p>
-				<p class="dates">December 2012 - February 2013</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-			</div>
+			<hr>
 		</div>
 		
 		<div class="experience">
-			<div class="logo">
-				<img src="./main/img/capgemini.png">
+			<div class="container">
+				<div class="row">
+					<div class="logo col-md-3 col-xs-12">
+						<img src="./main/img/capgemini.png">
+					</div>
+					<div class="description col-md-9 col-xs-12">
+						<p class="enterprise"><b>CAPGEMINI</b></p>
+						<p class="dates">February 2013 - November 2014</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
 			</div>
-			<div class="description">
-				<p class="enterprise"><b>CAPGEMINI</b></p>
-				<p class="dates">February 2013 - November 2014</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-			</div>
+			<hr>
 		</div>
 		
 		<div class="experience">
-			<div class="logo">
-				<img src="./main/img/roche.png">
-			</div>
-			<div class="description">
-				<p class="enterprise"><b>HOFFMAN - LA ROCHE</b></p>
-				<p class="dates">November 2014 - ACTUALLY</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+			<div class="container">
+				<div class="row">
+					<div class="logo col-md-3 col-xs-12">
+						<img src="./main/img/roche.png">
+					</div>
+					<div class="description col-md-9 col-xs-12">
+						<p class="enterprise"><b>HOFFMAN - LA ROCHE</b></p>
+						<p class="dates">November 2014 - Actually</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div style="display:block; height: 500px;">
-		content
+	
+	<div id="technologies" class="anchor"></div>
+	<div  class="technologies">
+		<div id="technologies-title" class="title">
+			<h2 id="technologies_h2">TECHNOLOGIES</h2>
+		</div>
+		
+		<div class="tech">
+			<h3>Mastered</h3>
+			<hr>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/html5.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/css3.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/js52.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/java.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/python.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/cloud.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/bootstrap.png">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<h3>Well Known</h3>
+			<hr>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/polymer.svg">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/grunt.svg">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/bower.svg">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/github.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/PowerShell.png">
+						</div>
+					</div>					
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/less.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3>Some experience</h3>
+			<hr>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/WindowsAzure.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/node-js.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/dart.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/angularjs.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="logo">
+							<img src="./main/img/django.jpg">
+						</div>
+					</div>
+				</div>							
+			</div>
+		</div>
 	</div>
+	
+	<div id="portfolio" class="anchor"></div>
+	<div  class="portfolio">
+		<div id="portfolio-title" class="title">
+			<h2 id="portfolio_h2">PORTFOLIO</h2>
+		</div>
+		<div id="portfolio_main">
+			<div class="container">
+				<div class="row">				
+					<div class="item-container col-md-6 col-sm-6 col-xs-12">
+						<div class="thumbnail">	
+							<a href="./brezoRodriguez">
+								<img src="./main/img/brezo.png">
+							</a>
+						</div>
+					</div>
+					<div class="item-container col-md-6 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<img src="./main/img/portfoliopage2.png">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="contact" class="anchor"></div>
+	<!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>David Martín Beltrán</strong>
+                    </h4>
+                    <p>Calle Atocha 78, 28000, Madrid</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (+34) 676 50 00 29</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:dade3007@gmail.com">dade3007@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="flaticon-linkedin12"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="flaticon-github7"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="flaticon-google2"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; David Martín Beltrán 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+	
+	
 	
 	
 	<!-- jQuery -->

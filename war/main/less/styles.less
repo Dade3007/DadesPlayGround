@@ -1,3 +1,45 @@
+hr{		
+	margin: 10px auto;
+	border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+h3{
+	margin: 0 auto;
+	color: #333;
+	padding-top:15px;
+}
+	
+.anchor{
+	position: relative;
+	top: -50px;
+}
+
+.title{
+	height: 300px;
+	overflow:hidden;
+	display: block;
+	text-align: center;
+	
+	> img{
+		width: 100%;
+		position: relative;
+	}
+	
+	h2{
+		color: white;
+		font-family: 'Bitter', serif;
+		font-weight: 700;
+		position: relative;
+		top: 95px;
+		font-size:55px;
+		
+	}
+}
+
 .header {
 	background-color: #00b3fe;
 	height: 450px;
@@ -107,65 +149,131 @@
 .career{
 	background-color:#F8F8F8;
 	#career-title{
-		height: 300px;
-		overflow:hidden;
-		display: block;
-		text-align: center;
 		
 		background: url(../img/careers.jpg) no-repeat center center scroll;
 		background-size: 100%;
 		
-		> img{
-			width: 100%;
-			position: relative;
-		}
-		
-		h2{
-			color: white;
-			font-family: 'Bitter', serif;
-			font-weight: 700;
-			position: relative;
-			top: 95px;
-			font-size:55px;
-			
-		}
 	}
 	
 	.experience{
 		margin: 0 20%;
 		padding-top: 20px;
+		clear: both;
 		
-		height: 200px;
 		
-		.logo{
-			display: inline-block;			
-			height: 100%;
-			width: 25%;
-			margin:0px;
-			vertical-align: top;
-			text-align: center;
+		.container{
+			width: auto !important;
 			
-			> img{
+			.logo{
+				display: inline-block;			
 				height: 100%;
-				max-width: 100%;
-				margin: 0 auto;
-				padding: 25px;
-			}
-		}
-		.description{
-			display: inline-block;
-			height: 100%;
-			width: 74%;
-			margin:0px;
-			padding-left: 15px;
-			
-			> .enterprise{
-				margin-bottom: 0px;
-				font-size: 20px;
-			}
-			> .dates{
+				margin:0px;
+				vertical-align: top;
+				text-align: center;
 				
+				> img{
+					
+					max-width: 100%;
+					margin: 0 auto;
+					padding: 25px;
+				}
 			}
+			.description{
+				display: inline-block;
+				height: 100%;
+				margin:0px;
+				padding-left: 15px;
+				
+				> .enterprise{
+					margin-bottom: 0px;
+					font-size: 20px;
+				}
+				> .dates{
+					
+				}
+			}
+		}		
+	}
+}
+
+.technologies{	
+
+	#technologies-title{
+		background: url(../img/tech2.jpg) no-repeat center center scroll;
+		background-size: 100%;
+	}
+	
+	.tech{
+		margin: 0 20%;
+		padding: 20px 0;
+		clear: both;
+		text-align: center;
+		
+		hr{
+			width: 100px;	
+			margin-bottom: 25px;		
 		}
+		
+		.container{
+			width: auto !important;
+			
+			.row{
+				> div{
+					text-align: center;
+					margin-bottom: 25px;
+				}
+			
+				.logo{
+					height:150px;
+					width:150px;
+					margin: 0 auto;
+						
+					> img{
+						width: 100%;
+						margin: auto;
+					}
+				}
+			}			
+		}
+	}
+}
+
+.portfolio{	
+
+	
+
+	#portfolio-title{
+		background: url(../img/portfolio.jpg) no-repeat center center scroll;
+		background-size: 100%;
+	}
+	
+	#portfolio_main{
+		margin: 0 20%;
+		padding: 75px 0;
+		clear: both;
+		text-align: center;
+		
+		.container{
+			width: auto;
+		}
+	}
+}
+
+footer{
+	background-color: #2F2F2F;
+	padding-top: 60px;
+	
+	p, a, h4,li, i{
+		font-color: rgba(195, 195, 195, 0.9);
+		color: rgba(195, 195, 195, 0.9);
+	}
+	
+	hr{
+		color: #B7B2B2;
+		background-color:#B7B2B2;
+	}
+	
+	[class^="flaticon-"]::before{
+		font-size:29px;
 	}
 }
