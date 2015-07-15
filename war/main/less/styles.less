@@ -80,9 +80,27 @@
 	}
 	
 	section{
+		
 		text-align: left;
-		margin: 0 20%;
+		margin: 0px 20%;
 		padding-top: 10px;
+		position: relative;
+		right: 2000px;
+		display: inline-block;
+		
+		-webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        
+        &.final{
+        	right: 0px;
+        }
+		
+		.title_div{
+			text-align:center;
+		}
 	}
 }
 
@@ -94,6 +112,9 @@
 		display: block;
 		text-align: center;
 		
+		background: url(../img/careers.jpg) no-repeat center center scroll;
+		background-size: 100%;
+		
 		> img{
 			width: 100%;
 			position: relative;
@@ -104,7 +125,7 @@
 			font-family: 'Bitter', serif;
 			font-weight: 700;
 			position: relative;
-			top: -230px;
+			top: 95px;
 			font-size:55px;
 			
 		}
@@ -128,6 +149,7 @@
 				height: 100%;
 				max-width: 100%;
 				margin: 0 auto;
+				padding: 25px;
 			}
 		}
 		.description{

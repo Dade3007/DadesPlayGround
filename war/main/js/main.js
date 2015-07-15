@@ -1,24 +1,12 @@
 $(function() {
 	
 	$('#title-container').addClass("final");
-	alignCareersTitle();
 	
-	
+	setTimeout(function() { $('#section-about').addClass("final")}, 250);
 });
 
-$(window).resize(function() {
-	alignCareersTitle();
-});
 
-function alignCareersTitle(){
-	
-	var height = $('#careers_img').css('height').split("px")[0];
-	
-	var top = (((height/2)*(-1))-40);
-	console.log(top);
-	
-	$('#career_h2').css('top', top + "px");	
-};
+
 
 $('a').click(function(){
     $('html, body').animate({
