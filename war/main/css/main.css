@@ -3,9 +3,9 @@ hr {
   border: none;
   height: 1px;
   /* Set the hr color */
-  color: #333;
+  color: #DADADA;
   /* old IE */
-  background-color: #333;
+  background-color: #DADADA;
   /* Modern Browsers */
 }
 h3 {
@@ -16,6 +16,25 @@ h3 {
 .anchor {
   position: relative;
   top: -50px;
+}
+p,
+h3,
+h2 {
+  font-family: 'Roboto';
+}
+p {
+  font-size: 16px;
+}
+.navbar {
+  padding: 0 20%;
+}
+@media (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+}
+.navbar .container {
+  padding: 0px !important;
 }
 .title {
   height: 300px;
@@ -35,11 +54,27 @@ h3 {
   top: 95px;
   font-size: 55px;
 }
+@media (max-width: 992px) {
+  .title h2 {
+    top: 55px;
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .title h2 {
+    font-size: 35px;
+  }
+}
 .header {
   background-color: #00b3fe;
   height: 450px;
   padding-top: 50px;
   text-align: center;
+}
+@media (max-width: 992px) {
+  .header {
+    padding-top: 10px;
+  }
 }
 .header .title-container {
   margin: 0 auto;
@@ -52,6 +87,11 @@ h3 {
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+@media (max-width: 992px) {
+  .header .title-container {
+    top: 150px;
+  }
 }
 .header .title-container.final {
   top: 50px;
@@ -100,9 +140,9 @@ h3 {
   border: none;
   height: 1px;
   /* Set the hr color */
-  color: #333;
+  color: #DADADA;
   /* old IE */
-  background-color: #333;
+  background-color: #DADADA;
   /* Modern Browsers */
 }
 .aboutMe section {
@@ -118,6 +158,11 @@ h3 {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+@media (max-width: 992px) {
+  .aboutMe section {
+    margin: 0 5%;
+  }
+}
 .aboutMe section.final {
   right: 0px;
 }
@@ -126,15 +171,29 @@ h3 {
 }
 .career {
   background-color: #F8F8F8;
+  padding-bottom: 20px;
 }
 .career #career-title {
-  background: url(../img/careers.jpg) no-repeat center center scroll;
+  background: url(../img/carrera3.jpg) no-repeat center center scroll;
   background-size: 100%;
+}
+@media (max-width: 992px) {
+  .career #career-title {
+    background: url(../img/carrera3.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+  }
 }
 .career .experience {
   margin: 0 20%;
   padding-top: 20px;
   clear: both;
+}
+@media (max-width: 992px) {
+  .career .experience {
+    margin: 0 5%;
+    padding-top: 0px;
+  }
 }
 .career .experience .container {
   width: auto !important;
@@ -151,6 +210,11 @@ h3 {
   margin: 0 auto;
   padding: 25px;
 }
+@media (max-width: 992px) {
+  .career .experience .container .logo > img {
+    height: 200px;
+  }
+}
 .career .experience .container .description {
   display: inline-block;
   height: 100%;
@@ -162,14 +226,26 @@ h3 {
   font-size: 20px;
 }
 .technologies #technologies-title {
-  background: url(../img/tech2.jpg) no-repeat center center scroll;
+  background: url(../img/techononon.jpg) no-repeat center center scroll;
   background-size: 100%;
+}
+@media (max-width: 992px) {
+  .technologies #technologies-title {
+    background: url(../img/techononon.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+  }
 }
 .technologies .tech {
   margin: 0 20%;
   padding: 20px 0;
   clear: both;
   text-align: center;
+}
+@media (max-width: 992px) {
+  .technologies .tech {
+    margin: 0 5%;
+  }
 }
 .technologies .tech hr {
   width: 100px;
@@ -192,14 +268,26 @@ h3 {
   margin: auto;
 }
 .portfolio #portfolio-title {
-  background: url(../img/portfolio.jpg) no-repeat center center scroll;
+  background: url(../img/porfolioioioi.jpg) no-repeat center center scroll;
   background-size: 100%;
+}
+@media (max-width: 992px) {
+  .portfolio #portfolio-title {
+    background: url(../img/porfolioioioi.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+  }
 }
 .portfolio #portfolio_main {
   margin: 0 20%;
   padding: 75px 0;
   clear: both;
   text-align: center;
+}
+@media (max-width: 992px) {
+  .portfolio #portfolio_main {
+    margin: 0 5%;
+  }
 }
 .portfolio #portfolio_main .container {
   width: auto;
