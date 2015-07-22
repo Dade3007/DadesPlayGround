@@ -23,14 +23,42 @@
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+    
+    <link href="main/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- 
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	 -->
 
 </head>
 
 <body>
+	   <!-- Navigation -->
+    <div id="top" class="anchor"></div>
+    <a id="menu-toggle" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >David Martín</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#career" onclick = $("#menu-close").click(); >Career</a>
+            </li>
+            <li>
+                <a href="#technologies" onclick = $("#menu-close").click(); >Technologies</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
+	
 	<!-- NavBar -->
 	<nav class="navbar navbar-default navbar-fixed-top hidden-xs" role="navigation">
   		<div class="container">
