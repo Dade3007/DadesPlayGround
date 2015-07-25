@@ -1,10 +1,5 @@
-$(function() {
-	
-	$('#title-container').addClass("final");
-	
-	
-	
-	
+$(function() {	
+	$('#title-container').addClass("final");	
 	setTimeout(function() { $('#section-about').addClass("final")}, 250);
 });
 
@@ -23,3 +18,4 @@ $('a').click(function(){
     }, 500);
     return false;
 });
+

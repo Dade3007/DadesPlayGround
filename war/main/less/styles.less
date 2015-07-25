@@ -58,6 +58,10 @@ p{
     -ms-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
+    
+    @media (min-width: 993px) {
+		display: none;
+	}
 }
 
 .sidebar-nav {
@@ -160,13 +164,22 @@ p{
 }
 
 .header {
-	background-color: #00b3fe;
+/*	background-color: #00b3fe;
 	height: 450px;
 	padding-top: 50px;
+	text-align: center; */
+	
+	background: url(../img/Optimized-code2.jpg) no-repeat center center scroll;
+	background-size: 100%;
+	height: 100vh;
+	padding-top: 29vh;
 	text-align: center;
+	min-height: 525px;
 	
 	@media (max-width: 992px) {
 		padding-top: 10px;
+		background: url("../img/Optimized-code2.jpg") no-repeat;
+		background-size: cover;	
 	}
 	
 	
@@ -174,12 +187,15 @@ p{
 	.title-container{
 		margin: 0 auto;
 		display: inline-block;
-		top:100px;
+	/* 	top:100px; */
+		top:100vh;
 		position: relative;
 		opacity: 0;
+		overflow:hidden;
 		
 		@media (max-width: 992px) {
-			top: 150px;
+			
+			top: 100vh;
 		}
 		
 	    -webkit-transition: all 1s ease-in-out;
@@ -191,6 +207,10 @@ p{
     &.final{
     	top: 50px;
     	opacity: 1;
+    	@media (max-width: 992px) {
+			
+			top: 20vh;
+		}
     
     }
 		
@@ -283,12 +303,12 @@ p{
 	
 	#career-title{
 		
-		background: url(../img/carrera3.jpg) no-repeat center center scroll;
+		background: url(../img/Optimized-carrera3.jpg) no-repeat center center scroll;
 		background-size: 100%;
 		
 		
 		@media (max-width: 992px) {
-			background: url(../img/carrera3.jpg) no-repeat;
+			background: url(../img/Optimized-carrera3.jpg) no-repeat;
 			height: 200px;
 			background-size:cover;
 			background-position: right;
@@ -348,11 +368,11 @@ p{
 .technologies{	
 
 	#technologies-title{
-		background: url(../img/techononon.jpg) no-repeat center center scroll;
+		background: url(../img/Optimized-techononon.jpg) no-repeat center center scroll;
 		background-size: 100%;
 		
 		@media (max-width: 992px) {
-			background: url(../img/techononon.jpg) no-repeat;
+			background: url(../img/Optimized-techononon.jpg) no-repeat;
 			height: 200px;
 			background-size:cover;
 		}
@@ -402,11 +422,11 @@ p{
 	
 
 	#portfolio-title{
-		background: url(../img/porfolioioioi.jpg) no-repeat center center scroll;
+		background: url(../img/Optimized-porfolioioioi.jpg) no-repeat center center scroll;
 		background-size: 100%;
 		
 		@media (max-width: 992px) {
-			background: url(../img/porfolioioioi.jpg) no-repeat;
+			background: url(../img/Optimized-porfolioioioi.jpg) no-repeat;
 			height: 200px;
 			background-size:cover;
 		}
@@ -424,6 +444,10 @@ p{
 		
 		.container{
 			width: auto;
+			
+			img{
+				width:100%;
+			}
 		}
 	}
 }
