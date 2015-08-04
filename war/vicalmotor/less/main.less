@@ -1,0 +1,214 @@
+html, body, div, section, h1, footer, iframe{
+  margin: 0px;
+  paddin: 0px;
+      box-sizing: border-box;
+}
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+
+.container {
+    position: relative;
+    
+    display:inline-block;
+
+    &.title{
+        top: 45%;
+        transform: translateY(-50%);
+        span{
+          font-family: 'Open Sans', sans-serif;
+          color: white;
+          float: left;
+          font-size:4vh;
+          text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+      }
+    } 
+}
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module{
+
+  text-align: center;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+  }
+  p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+     font-family: 'Open Sans', sans-serif;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  &.content {
+   
+    text-align: center;
+    background-color: rgba(119, 95, 95, 0.27);
+
+    &#compraventa{
+      .container{
+        text-align: center;
+      }
+      padding: 30px 0;  
+       .carousel{
+          width:850px;
+          text-align:center;
+          margin: 20px auto;
+          background-color: rgba(255, 255, 255, 0.35);
+          border-radius: 5px;
+          div{
+            
+            display:inline-block;
+            vertical-align:top;
+            max-height: 300px;
+
+            &.image{
+                width:75%;
+                text-align:right;
+                img {
+                    max-height:300px;
+                    text-align: right;
+                  }
+                span{
+                    position: absolute;
+                    top: 400px;
+                    font-size: 36px;
+                    font-family: "Open Sans",sans-serif;
+                    right: 116px;
+                    color: white;
+                    text-shadow: 0px 0px 10px #000;
+                    font-weight: 600;
+                  }
+                }
+
+            &.description{
+                width:24%;
+                text-align:left;
+                padding-left:50px;
+
+                p{
+                    margin: 0px !important; 
+                }
+            }
+          }
+
+          
+       }
+    }
+
+    &#main-content{
+      text-align:right;
+
+      div{
+        display:inline-block;
+        vertical-align:top;
+        width:49%;
+
+        &.container{
+          padding-left: 8vw;
+          padding-right:20px;
+        }
+
+        .google-maps iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100% !important;
+              height: 100% !important;
+              overflow: hidden;
+          }
+      }
+    }
+
+    .container{
+      width:35%;
+      vertical-align: top;
+      max-width: 1024px;
+      width:80%;
+      text-align: left;
+    }
+  }
+  &.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .container{
+      transform: translateY(-50%);
+      top:45%;
+    }
+  }
+  &.parallax h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 10vh;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    font-family: 'Open Sans', sans-serif;
+  }
+  &.parallax-1 {
+    background-image: url("../img/garage.jpg");
+    height:100vh;
+  }
+  &.parallax-2 {
+     background-image: url("../img/ds3.jpg");
+     height:300px;
+  }
+  &.parallax-3 {
+    background-image: url("../img/rally.jpg");
+    height:300px;
+  }
+}  
+
+footer{
+
+  background-color:#2F2F2F;
+  text-align:center;
+  padding: 30px 0;
+
+  div{
+      display:inline-block;
+      margin: 0 auto;
+      max-width:760px;
+  
+
+      span{
+        color: #777;
+        font-family: "Roboto";
+        line-height: 1.42857;
+        font-size: 16px;
+      }
+
+    } 
+}
+
+
+@media all and (min-width: 600px) {
+  &.module h2 {
+    font-size: 42px;
+  }
+  &.module p {
+    font-size: 20px;
+  }
+  &.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  &.module.parallax h1 {
+    font-size: 160px;
+  }
+}
